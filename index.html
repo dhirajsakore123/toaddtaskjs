@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="parent22">
+        <div class="nav">
+           <div class="text">
+              <span class="task">Tasks</span><span class="list">List</span>
+           </div>
+         </div>
+      <div class="middle" id="flow">
+            <div class="flower"  onclick="show()" >
+             <div class="icon" >
+            +
+            </div>
+
+           <div class="addtask">
+            Add New Task
+           </div>
+          </div>
+      </div>
+
+      <div class="topheading"></div>
+
+      <div class="back"><span class="arrow"> < </span> Back</div>
+    <div class="todos22">
+    
+    
+    </div>
+</div>
+
+
+ <div class="parent1">
+        <div class="nav">
+           <div class="text">
+              <span class="task">Tasks</span><span class="list">List</span>
+           </div>
+         </div>
+      <div class="middle">
+            <div class="flower" onclick="show()" >
+             <div class="icon" >
+            +
+            </div>
+
+           <div class="addtask">
+            Add New Task
+           </div>
+          </div>
+      </div>
+    <div class="todos">
+      <p class="notodo">No Itemes In To Do List</p>
+    
+    </div>
+</div>
+
+<div class="addnewtask" >
+ 
+      <div class="page2">
+          Add New Task
+       </div>
+     
+           <button class="cross" onclick="clo()">
+            Close
+           </button>
+      
+  
+     
+        <input type="text"  placeholder="Add New Task" id="inp" autocomplete="off">
+        <button onclick="addtasks()" >
+           Add 
+       </button>
+      
+</div> 
+
+<div class="addnewtask1" >
+ 
+  <div class="page2">
+      Add New Task
+   </div>
+ 
+       <button class="cross" onclick="clo()">
+        Close
+       </button>
+  
+
+ 
+    <input type="text"  placeholder="Add New Task" id="inp2" autocomplete="off">
+    <button id="addtaskname">
+       Add 
+   </button>
+  
+</div> 
+
+   
+    <script src="./script.js"></script>
+</body>
+</html>
