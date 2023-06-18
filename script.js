@@ -2,7 +2,7 @@ let taskname=document.getElementById("inp")
 let todos=document.getElementsByClassName("todos")
 let addtask=document.getElementsByClassName('addnewtask')
 let blur1=document.getElementsByClassName("parent1")
-let inp=document.getElementById("inp")
+// let inp=document.getElementById("inp")
 let notodo=document.querySelector(".notodo")
 let addtask1=document.querySelector(".addnewtask1")
 let lux=document.getElementById("addtaskname")
@@ -95,6 +95,7 @@ adding.addEventListener("click",(event)=>{
                 let parentDiv = event.target.parentNode;
                 let parentId = parentDiv.id;
                 son=document.getElementById(`${parentId}`)
+                tex.setAttribute("placeholder","Add New Item")
                })
                
 
