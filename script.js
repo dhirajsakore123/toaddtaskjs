@@ -16,6 +16,7 @@ let count=0
 let con=0
 let son
 let moon
+let mo
 
 
 function addtasks(){
@@ -99,7 +100,7 @@ adding.addEventListener("click",(event)=>{
                 let parentDiv = event.target.parentNode;
                 let parentId = parentDiv.id;
                 son=document.getElementById(`${parentId}`).children
-                 moon=son[3]
+                 mo=son[3]
                 console.log(moon)
                 tex.setAttribute("placeholder","Add New Item")
                })
@@ -116,7 +117,7 @@ lux.addEventListener("click",()=>{
   let whattodotask=document.createElement("p")
   let done=document.createElement("button")
 
-moon.appendChild(whattodo)
+mo.appendChild(whattodo)
 whattodo.appendChild(whattodotask)
 whattodo.appendChild(done)
 
