@@ -10,7 +10,7 @@ body{
     height: 70px;
     position:fixed;
     top: 0;
-    background: rgb(18, 18, 18);
+    background: rgb(13, 13, 13);
     box-shadow: 0px 10px 20px #090909e4;
     z-index: 20;
 }
@@ -184,7 +184,10 @@ div.container{
     border-radius: 10px;
     border: 2px solid rgb(255, 98, 0);
     background-color:#fff;
+    
 }
+
+
 
 .todos{
 
@@ -196,16 +199,17 @@ div.container{
     justify-content: space-between;
     gap: 40px; 
     padding-bottom: 20px;
-   
+     
 }
 .delet{
  width: 40px;
  height: 40px;
   border-radius: 50%;
   background-color: rgb(255, 98, 0) ;
-  position:absolute;
-  bottom: 5px;
-  right: 60px;
+  position:relative;
+ top: 300px;
+  left: 120px;
+  z-index: 1;
   background-image: url(./trash.jpeg);
   background-position: center;
   background-size: 40px;
@@ -218,14 +222,19 @@ div.container{
     width: 220px;
     text-align: center;
     padding-top:10px;
-    
+    z-index: 1;
+    overflow-wrap: break-word;
 }
+
+
 .sept{
  position: absolute;
  width: 220px;
- top: 50px;
+  top: 40px;
   background-color: #0e0d0d; 
+  z-index: 1;
 }
+
 .notodo{
    font-size: 40px; 
    color: #fff;
@@ -236,9 +245,10 @@ div.container{
     height: 40px;
      border-radius: 50%;
      background-color: #00A5EC ;
-     position:absolute;
-     bottom: 5px;
-     right: 10px;
+     position:relative;
+  top: 7px;
+  left: 167px;
+  z-index: 1;
      background-position: center;
      background-size: 40px; 
      text-align: center;
@@ -250,23 +260,31 @@ div.container{
     cursor: pointer;
 }
 .whattodo{
+    
     box-sizing: border-box;
-    width: 220px;
-    height: 40px;
-
+    width: 200px;
     position:relative;
-    top: 80px;
+    top: 0px;
   text-align: left;
   padding-left: 20px;
-  padding-top: 7px;
+  padding-top: 15px;
+  padding-bottom:px ;
+ 
   font-size: 22px;
+}
+.whattodotask{
+    
+    padding-bottom:15px ;
+    width: 95px;
+    overflow-wrap: break-word;
+   
 }
 
 .doneit{
     position: absolute;
     width: 70px;
     height: 30px;
-    top: 5px;
+    top: 15px;
     left: 130px;
     background-color: #00A5EC;
     font-size: 10px;
@@ -287,6 +305,7 @@ div.container{
 }
 .heading{
     cursor: pointer;
+    position: fixed;
 }
 .back{
     position: absolute;
@@ -321,6 +340,164 @@ div.container{
     z-index: 1;
     color: #fff;
 }
+.innerdiv{
+    bottom: 20px;
+    width: 217px;
+    height: 250px;
+    position: sticky;
+    overflow-y: auto;
+    overflow-x: hidden;
+   
+ 
+}
+.innerdiv::-webkit-scrollbar{
+    
+    margin-top: 20px;
+}
+@media only screen and (max-width:500px) and (min-width:360px){
+    .text{
+        left: 10vmin;
+    }
+    .sum{
+        overflow-x: hidden;
+        height: 2000px;
+
+    }
+    .addtask{
+        display: none;
+
+    }
+    
+    .icon{
+        left: 40vmin;
+    }
+    .last{
+        flex-direction: column;
+       left: 12vmin;
+       width: auto;
+     
+    }
+
+    .middle{
+        width: auto;
+        
+    }
+       
+    .parent1{
+        overflow-x: hidden;
+        width: auto;
+        height: 2000px;
+        
+    }
+    .parent{
+        overflow-x: hidden;
+    }
+    .box{
+        width: 300px;
+        height: 350px;
+    }
+     
+    .addnewtask{
+        height: 250px;
+       width: 300px;        
+       top: 270px;
+       left: 10vw;
+       overflow-x: hidden;
+    }
+    
+.cross{
+    color: #858585;
+    display: inline-block;
+    font-size: 30px;
+    position: relative;
+    top: 10px;
+   left: 120px;
+}
+.todos{
+    
+left: 2vb;
+width: 42vb;
+
+}
+.notodo{
+    font-size:2vmax;
+}
+.pops{
+    left: 8vb;
+}
+  
+.addnewtask{
+    width: 43vb;
+    height: 25vb;
+    left: 1vb;
+    right: 1vb;
+}
+.addnewtask1{
+    width: 43vb;
+    height: 25vb;
+    left: 1vb;
+    right: 1vb;
+}
+.page2{
+    left: 32%;
+} 
+
+.cross{
+    top: 70%;
+    left: 15%;
+    width: 30vw;
+    color: white;
+}
+
+#addbutton{
+    top: 70%;
+    left: 15%;
+    width: 30vw;
+}
+#addtaskname{
+    top: 70%;
+    left: 15%;
+    width: 30vw; 
+}
+.ad{
+    left: 5vw;
+    top: 20vh;
+    width: 30vw;  
+}
+#inp{
+    left:7%;  
+}
+#inp2{
+    left:7%;   
+}
+.todos22{
+   top:16vh ;
+    left: 2vb;
+    width: 42vb; 
+  
+}
+.topheading{
+    top: 27vh;
+    width: 90vw;
+    text-align: center;
+    height: auto;
+    left:5vw ;
+} 
+.back{
+    top: 17vh;
+    left: 15vw;
+}
+#exc{
+    top:16vh ;
+    left: 68vw;  
+}
+
+}
+ 
+
+ 
+
+
 
 
 

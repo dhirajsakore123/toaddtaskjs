@@ -19,11 +19,11 @@
          </div>
       <div class="middle" id="flow">
             <div class="flower"  onclick="show()" >
-             <div class="icon" >
+             <div class="icon" id="exc" >
             +
             </div>
 
-           <div class="addtask">
+           <div class="addtask" >
             Add New Task
            </div>
           </div>
@@ -75,7 +75,7 @@
   
      
         <input type="text"  placeholder="Add New Task" id="inp" autocomplete="off">
-        <button onclick="addtasks()" >
+        <button onclick="addtasks()" id="addbutton">
            Add 
        </button>
       
@@ -94,11 +94,10 @@
 
  
     <input type="text"  placeholder="Add New Task" id="inp2" autocomplete="off">
-    <button id="addtaskname">
+    <button id="addtaskname" class="ad" >
        Add 
    </button>
   
-</div> 
 
    
     <script src="./script.js"></script>

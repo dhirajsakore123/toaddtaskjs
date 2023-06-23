@@ -35,6 +35,7 @@ function addtasks(){
        todos[0].appendChild(popup)
        popup.classList.add("pops")
     popup.setAttribute("id",`pop${con}`)
+    popup.style.height = popup.scrollHeight + 'px';
 
 let head=document.createElement("div")
        popup.appendChild(head)
@@ -81,6 +82,9 @@ del.addEventListener("click",()=>{
         popup.remove()
         })
       
+        let innerdiv = document.createElement("div")
+        popup.appendChild(innerdiv)
+        innerdiv.classList.add("innerdiv")
 
 adding=document.createElement("div")
             popup.appendChild(adding)
@@ -94,7 +98,9 @@ adding.addEventListener("click",(event)=>{
                 
                 let parentDiv = event.target.parentNode;
                 let parentId = parentDiv.id;
-                son=document.getElementById(`${parentId}`)
+                son=document.getElementById(`${parentId}`).children
+                 moon=son[3]
+                console.log(moon)
                 tex.setAttribute("placeholder","Add New Item")
                })
                
@@ -110,7 +116,7 @@ lux.addEventListener("click",()=>{
   let whattodotask=document.createElement("p")
   let done=document.createElement("button")
 
-son.appendChild(whattodo)
+moon.appendChild(whattodo)
 whattodo.appendChild(whattodotask)
 whattodo.appendChild(done)
 
