@@ -10,7 +10,7 @@ body{
     height: 70px;
     position:fixed;
     top: 0;
-    background: rgb(13, 13, 13);
+    background: rgb(21, 21, 21);
     box-shadow: 0px 10px 20px #090909e4;
     z-index: 20;
 }
@@ -493,6 +493,46 @@ width: 42vb;
 }
 
 }
+
+
+/* ################## */
+@media only screen and (max-width:1060px) and (min-width:500px){
+.nav{
+    width: 100%;
+    height: 70px;
+}
+.icon{
+    left: 70%;
+}
+.addtask{
+    left: 71%;
+}
+
+.todos{
+    left: 10%;
+    width: 80%;
+  
+}
+
+.addnewtask{
+    left: 20%;
+}
+.addnewtask1{
+    left: 20%;
+}
+.todos22{
+    left: 30%;
+}
+.back{
+    top: 12%;
+    left: 10%;
+}
+.topheading{
+    left: 30%;
+    top: 15%;
+}
+}
+
  
 
  
