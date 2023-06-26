@@ -201,6 +201,10 @@ div.container{
     padding-bottom: 20px;
      
 }
+.cls{
+    left: 180px;  
+    width: 1100px;
+}
 .delet{
  width: 40px;
  height: 40px;
@@ -216,6 +220,7 @@ div.container{
   cursor: pointer;
 }
 .heading{
+   /* display: none; */
     position: absolute;
     font-size: 25px;
     color: pink;
@@ -293,21 +298,13 @@ div.container{
     display: none;
     z-index: 1;
 }
-.todos22{
- 
-    z-index: 1;
-    width: 300px;
-   
-    position: relative;
-    top: 60px;
-    left: 600px;
-    padding-left: 30px;
-}
+
 .heading{
     cursor: pointer;
     position: fixed;
 }
 .back{
+      display: none;
     position: absolute;
     bottom:580px;
     left: 200px;
@@ -329,6 +326,7 @@ div.container{
     cursor: pointer;
 }
 .topheading{
+    display: none;
     position: absolute;
    top: 120px;
    left: 600px;
@@ -369,7 +367,7 @@ div.container{
     }
     
     .icon{
-        left: 40vmin;
+        left: 70%;
     }
     .last{
         flex-direction: column;
@@ -414,10 +412,10 @@ div.container{
    left: 120px;
 }
 .todos{
-    
-left: 2vb;
-width: 42vb;
-
+  
+top: 3%;
+left: 2%;
+width: 70%;
 }
 .notodo{
     font-size:2vmax;
@@ -470,14 +468,8 @@ width: 42vb;
 #inp2{
     left:7%;   
 }
-.todos22{
-   top:16vh ;
-    left: 2vb;
-    width: 42vb; 
-  
-}
 .topheading{
-    top: 27vh;
+    top: 8%;
     width: 90vw;
     text-align: center;
     height: auto;

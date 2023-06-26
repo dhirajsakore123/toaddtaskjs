@@ -17,6 +17,7 @@ let con=0
 let son
 let moon
 let mo
+let a=document.getElementsByClassName("pops")
 
 
 function addtasks(){
@@ -36,7 +37,7 @@ function addtasks(){
        todos[0].appendChild(popup)
        popup.classList.add("pops")
     popup.setAttribute("id",`pop${con}`)
-    popup.style.height = popup.scrollHeight + 'px';
+   
 
 let head=document.createElement("div")
        popup.appendChild(head)
@@ -44,21 +45,33 @@ let head=document.createElement("div")
        head.innerHTML=`${inp.value}`
        
 head.addEventListener("click",(event)=>{
-        
-         blur1[0].style.display="none"
-        par[0].style.display="block"
+      back[0].style.display="block"
+      back[0].style.top="120px"
+       topheading[0].style.display="block"
         let parentDiv = event.target.parentNode;
         let parentId = parentDiv.id;
             moon=document.getElementById(`${parentId}`)
-            todos22[0].appendChild(moon)
-            topheading[0].innerHTML=`${head.innerText}`
+        
+   
+   for(let i=0;i<a.length;i++){
+
+    a[i].style.display="none" 
+   }
+   moon.style.display="block"  
+  topheading[0].innerHTML=`${head.innerText}`
+
+  todos[0].style.justifyContent="space-around"
 
     back[0].addEventListener("click",()=>{
-    
-              blur1[0].style.display="block"
-              par[0].style.display="none" 
-              todos[0].appendChild(mo)       
-            })   
+      back[0].style.display="none"
+        topheading[0].style.display="none"
+        for(let i=0;i<a.length;i++){
+
+          a[i].style.display="block" 
+         }
+         todos[0].style.justifyContent="space-between"
+            }) 
+
   flow.addEventListener("click",()=>{
     blur1[0].style.display="block"
               par[0].style.display="none" 
@@ -81,6 +94,7 @@ let del=document.createElement("div")
 del.addEventListener("click",()=>{
         count--
         popup.remove()
+           
         })
       
         let innerdiv = document.createElement("div")
@@ -88,6 +102,7 @@ del.addEventListener("click",()=>{
         innerdiv.classList.add("innerdiv")
 
 adding=document.createElement("div")
+
             popup.appendChild(adding)
             adding.classList.add("adding")
             adding.innerHTML="+"
@@ -100,7 +115,7 @@ adding.addEventListener("click",(event)=>{
                 let parentDiv = event.target.parentNode;
                 let parentId = parentDiv.id;
                 son=document.getElementById(`${parentId}`).children
-                 mo=son[3]
+                mo=son[3]
                 
                 tex.setAttribute("placeholder","Add New Item")
                })
@@ -111,6 +126,7 @@ adding.addEventListener("click",(event)=>{
 
 
 lux.addEventListener("click",()=>{
+  
     blur1[0].style.filter="blur(0px)"
     addtask1.style.display="none"
   let whattodo=document.createElement("div")
@@ -138,6 +154,18 @@ done.addEventListener("click",()=>{
 
 })
 
+let b=document.getElementsByClassName("flower")
+b[0].addEventListener("click",()=>{
+  back[0].style.display="none"
+        topheading[0].style.display="none"
+        for(let i=0;i<a.length;i++){
+
+          a[i].style.display="block" 
+         }
+         todos[0].style.justifyContent="space-between"
+        
+  
+})
 
 
 
@@ -153,7 +181,8 @@ done.addEventListener("click",()=>{
  
  
  function show(){
-    
+  back[0].style.display="none"
+  topheading[0].style.display="none"
      blur1[0].style.filter="blur(20px)"
      addtask[0].style.display="block"
  }
