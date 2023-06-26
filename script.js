@@ -57,7 +57,7 @@ head.addEventListener("click",(event)=>{
     
               blur1[0].style.display="block"
               par[0].style.display="none" 
-              todos[0].appendChild(moon)       
+              todos[0].appendChild(mo)       
             })   
   flow.addEventListener("click",()=>{
     blur1[0].style.display="block"
