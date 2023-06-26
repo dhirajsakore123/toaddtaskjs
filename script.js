@@ -101,7 +101,7 @@ adding.addEventListener("click",(event)=>{
                 let parentId = parentDiv.id;
                 son=document.getElementById(`${parentId}`).children
                  mo=son[3]
-                console.log(moon)
+                
                 tex.setAttribute("placeholder","Add New Item")
                })
                
