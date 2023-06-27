@@ -342,7 +342,7 @@ div.container{
     bottom: 20px;
     width: 217px;
     height: 250px;
-    position: sticky;
+    position:;
     overflow-y: auto;
     overflow-x: hidden;
    
