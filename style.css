@@ -339,10 +339,10 @@ div.container{
     color: #fff;
 }
 .innerdiv{
+    position: relative;
     bottom: 20px;
     width: 217px;
     height: 250px;
-    position:;
     overflow-y: auto;
     overflow-x: hidden;
    
