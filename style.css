@@ -340,6 +340,7 @@ div.container{
 }
 .innerdiv{
     position: relative;
+    top: 5px;
     bottom: 20px;
     width: 217px;
     height: 250px;
